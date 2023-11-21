@@ -12,16 +12,27 @@ npm i easy-chatgpt
 
 ## Приклади використання
 ```js
-const Config = require('../cfg.json');
-const { ChatGPTClient } = require('easy-chatgpt');
 
-client.login(Config.token);
+const { ChatGPTClient } = require('easy-chatgpt');
+const Config = require('../cfg.json');
+
 const chatgpt = new ChatGPTClient(Config.GPT_Token);
 
-client.on('ready', async client => {
-    await chatgpt.send('Hi!').then(msg => {
-        console.log(msg.text);
+client.on('messageCreate', async message => {
+    
+    // Замінює команду порожнечою, щоб отримати увесь наступний контекст
+    const MessageContent = message.content.replace('.gpt', '');
+    // **
+
+    // Надсилає сповіщення "Бот друкує"
+    await message.channel.sendTyping();
+    // **
+
+    // Надсилає повідомлення ШІ та повертає Об'єкт
+    await chatgpt.send(MessageContent).then(async msg => {
+        await message.reply({content: msg.text});
     })
+    // **
 })
 ```
 
