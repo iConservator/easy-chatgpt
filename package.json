@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "git+https://github.com/iConservator/easy-chatgpt/"
   },
   "author": "Elitezen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Elitezen/discordjs-chatgpt/issues"
+    "url": "https://github.com/iConservator/easy-chatgpt/issues"
   },
-  "homepage": "https://github.com/Elitezen/discordjs-chatgpt#readme",
+  "homepage": "https://github.com/iConservator/easy-chatgpt#readme",
   "dependencies": {
     "chatgpt": "^5.1.2",
     "discord.js": "^14.8.0"
