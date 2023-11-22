@@ -12,10 +12,11 @@ npm i easy-chatgpt
 
 ## Приклади використання
 
-# Прямий запит #
+# Прямий запит
+![Alt text](https://i.ibb.co/9YKKCbJ/image-1.png)
+---
 Повертає об'єкт відповіді ШІ напряму
 ---
-![Alt text](https://i.ibb.co/9YKKCbJ/image-1.png)
 ```js
 const { ChatGPTClient } = require('easy-chatgpt');
 const chatgpt = new ChatGPTClient(Config.GPT_Token);
