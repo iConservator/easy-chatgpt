@@ -1,3 +1,9 @@
+
+[![Support Server](https://img.shields.io/discord/1141748711546949753.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/CxATkUXPAw)
+
+
+
+
 # easy-chatgpt
 
 **"easy-chatgpt"** - модуль, який максимально спростить Ваше життя та привнесе легкість там комфорт у роботу з ШІ. Звертайстесь напряму чи опосередковано. Керуйте та витрачайте свій час на оформлення та функціонал, а не на логіку звернень!
@@ -67,4 +73,9 @@ client.on('messageCreate', async message => {
 }
 })
 ```
+---
+
+
+### Підтримка та зворотній зв'язок
+<a href="https://discord.gg/milrato"><img src="https://discord.com/api/guilds/1141748711546949753/widget.png?style=banner2"></a>
 
